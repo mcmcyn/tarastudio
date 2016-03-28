@@ -28,10 +28,6 @@ router.get("/login", function(req, res){
 	res.render("login");
 });
 
-router.post("/login", passport.authenticate("local", {successRedirect: "/studios", failureRedirect: "/login", failureFlash: "Invalid credentials"}), function(req, res){
-	req.flash("success", "Welcome back, " + req.user.username + "!");
-	res.redirect("/studios");
-});
 
 router.get("/logout", function(req, res){
 	req.logout();
