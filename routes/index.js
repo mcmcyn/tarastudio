@@ -28,7 +28,7 @@ router.get("/login", function(req, res){
 	res.render("login");
 });
 
-router.post("/login", passport.authenticate("local", {sucessRedirect: "/studios", failureRedirect: "/login"}), function(req, res){
+router.post("/login", passport.authenticate("local", {successRedirect: "/studios", failureRedirect: "/login", failureFlash: "Invalid credentials"}), function(req, res){
 	req.flash("success", "Welcome back, " + req.user.username + "!");
 	res.redirect("/studios");
 });
