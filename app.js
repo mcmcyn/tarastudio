@@ -13,7 +13,6 @@ var		commentRoutes		  = require("./routes/comments"),
 		studioRoutes		  = require("./routes/studios"),
 		indexRoutes		      = require("./routes/index");
 		
-// mongoose.connect("mongodb://localhost/tara_studio");
 mongoose.connect(process.env.DATABASEURL);
 
 app.set("view engine", "ejs");
