@@ -12,7 +12,7 @@
 			<% studios.forEach(function(studio){ %>
 			<div class="col-md-3 col-sm-6">
 				<div class="thumbnail">
-					<img src="<%= studio.image %>">
+					<img id="studio-list-img" src="<%= studio.image %>">
 					<div class="caption">
 						<h4><%= studio.name %></h4>
 						<a class="btn btn-primary btn-sm" href="/studios/<%= studio._id %>">More info</a>
