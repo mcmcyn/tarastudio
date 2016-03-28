@@ -28,6 +28,7 @@ router.get("/login", function(req, res){
 	res.render("login");
 });
 
+router.post("/login", passport.authenticate("local", {successRedirect: "/studios", failureRedirect: "/login", successFlash: "Welcome back to taraStudio!", failureFlash: "Invalid username or password"}), function(req, res){});
 
 router.get("/logout", function(req, res){
 	req.logout();
