@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+	<div class="container">
+		<header class="jumbotron text-center">
+			<h1>Welcome to taraStudio</h1>
+			<h3>View all the studios from all over the country</h3>
+			<a class="btn btn-primary btn-lg" href="/studios/new">List Your Studio Now!</a>
+		</header>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<h3 id="featured">Featured Studios</h3>
+			</div>
+			<% studios.forEach(function(studio){ %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="<%= studio.image %>">
+					<div class="caption">
+						<h4><%= studio.name %></h4>
+						<a class="btn btn-primary btn-sm" href="/studios/<%= studio._id %>">More info</a>
+					</div>
+				</div>	
+			</div>
+			<% }) %>
+		</div>
+	</div>
+<% include ../partials/footer %>

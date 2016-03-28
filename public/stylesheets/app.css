@@ -1,0 +1,45 @@
+.navbar {
+	border-radius: 0;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+/*.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover {*/
+/*	color: blue;*/
+/*}*/
+
+row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#featured {
+	text-align: center;
+}
+
+.form-styling {
+	width: 30%;
+	margin: 20px auto;
+}
+
+#delete-form {
+	display: inline;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#delete-form {
+    display: inline;
+}
